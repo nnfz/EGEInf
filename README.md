@@ -15,7 +15,7 @@
 ```cmd
 git clone https://github.com/nnfz/EGEInf.git
 ```
-не забудь зайти в дирректорию, в которую клонируешь
+Не забудь зайти в дирректорию, в которую клонируешь
 ![трусики](https://i.postimg.cc/bwzGFRdS/753-E3400-37-CB-4-E1-C-9530-808507665-C15.png)
 ```cmd
 cd Z:\huipizda
