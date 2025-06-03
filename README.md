@@ -18,10 +18,8 @@
 git clone https://github.com/nnfz/EGEInf.git
 ```
 Не забудь зайти в дирректорию, в которую клонируешь
-![трусики](https://i.postimg.cc/bwzGFRdS/753-E3400-37-CB-4-E1-C-9530-808507665-C15.png)
-```cmd
-cd Z:\huipizda
-```
+- так ![трусики](https://i.postimg.cc/bwzGFRdS/753-E3400-37-CB-4-E1-C-9530-808507665-C15.png)
+- или так ```cd Z:\huipizda```
 ---
 > TO DO
 - [ ] 1 Задание
