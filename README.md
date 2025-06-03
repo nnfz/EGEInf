@@ -27,3 +27,6 @@
 - [ ] 20 Задание
 - [ ] 21 Задание
 - [ ] 22 Задание
+
+# Credits
+[Родя](https://www.youtube.com/@rodya_inf)
