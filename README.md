@@ -21,7 +21,11 @@ git clone https://github.com/nnfz/EGEInf.git
 - так
 
 ![трусики](https://i.postimg.cc/bwzGFRdS/753-E3400-37-CB-4-E1-C-9530-808507665-C15.png)
-- или так ```cd Z:\huipizda```
+- или так
+
+```cmd
+cd Z:\huipizda
+```
 ---
 > TO DO
 - [ ] 1 Задание
