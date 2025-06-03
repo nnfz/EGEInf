@@ -1,6 +1,7 @@
 # 1 Задание
 Это легчайшее гавно
-Достаточно посмотреть пару видосов([тык](https://www.youtube.com/watch?v=p6w_gZZl69g&t=4s),[тык](https://www.youtube.com/watch?v=cMECwj6Raa8))
+## Достаточно посмотреть пару видосов([тык](https://www.youtube.com/watch?v=p6w_gZZl69g&t=4s),[тык](https://www.youtube.com/watch?v=cMECwj6Raa8))
+
 ![имег](https://i.postimg.cc/3J4pNvLk/6-ED29-CFE-4-A18-40-EB-A862-CA8497-A710-A3.png)
 >Впринципе тебе надо просто посмотреть откуда сколько идет дорог
 >> и сопоставить эти данные с таблицей
