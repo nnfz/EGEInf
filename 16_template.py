@@ -1,4 +1,4 @@
-# 1 То же, что и lru, иногда lru может не сработать хзлол
+# 1 № 21711 То же, что и lru, иногда lru может не сработать хзлол
 
 f= {} #Dict
 for n in range(10, 48000): #Perebor
@@ -8,7 +8,7 @@ for n in range(10, 48000): #Perebor
         f[n] = (n - 6) * f[n - 7] #Uslovie
 print((f[47872] - 290 * f[47865])/f[47858]) #Uslovie
 
-# 2 Sposob IMPORTANT
+# 2 Sposob IMPORTANT № 21711
 
 from functools import lru_cache # Import
 @lru_cache(None) #Temp
