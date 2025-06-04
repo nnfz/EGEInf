@@ -27,8 +27,7 @@ git clone https://github.com/nnfz/EGEInf.git
 cd Z:\huipizda
 ```
 
-## [Тирлист заданий от Роди](https://www.youtube.com/watch?v=XuzARD58-Ew&t=605s)
-
+[Тирлист заданий от Роди](https://www.youtube.com/watch?v=XuzARD58-Ew&t=605s)
 ---
 > TO DO
 - [X] 1 Задание
