@@ -53,3 +53,4 @@ cd Z:\huipizda
 
 # Credits
 ### [Родя](https://www.youtube.com/@rodya_inf)
+### [kompege](https://www.kompege.ru/)
