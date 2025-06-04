@@ -6,12 +6,12 @@ k = 20# **
 tracer(0)# *
 screensize(1000, 1000)# ** window size
 
-rt(90)#turn right 90
+rt(90)# turn right 90
 
-for x in range(7):#repeat 7 times
-    rt(45)#turn right 45
-    fd(11*k)#go forward 11 * 20
-    rt(45)#turn right 45
+for x in range(7):# repeat 7 times
+    rt(45)# turn right 45
+    fd(11*k)# go forward 11 * 20
+    rt(45)# turn right 45
 
 pu()# * tall up
 for x in range(-20, 20):# **
@@ -55,18 +55,18 @@ k = 20# **
 
 for x in range(2):# repeat 2 times
     fd(28 * k)# go forward 28
-    rt(90)#turn right 90
+    rt(90)# turn right 90
     fd(18 * k)# go forward 18
-    rt(90)#turn right 90
+    rt(90)# turn right 90
 
 pu()# tall up
 
 fd(14 * k)# go forward 14
-rt(90)#turn right 90
+rt(90)# turn right 90
 fd(10 * k)# go forward 10
-lt(90)#turn left 90
+lt(90)# turn left 90
 
-pd()
+pd()# tall down
 
 for x in range(2):
     fd(30 * k)# go forward 30
@@ -74,11 +74,11 @@ for x in range(2):
     fd(7 * k)# go forward 10
     rt(90)#turn right 90
 
-pu()
+pu()# tall up
 
-for x in range(-20, 50):
-    for y in range(-20, 20):
-        goto(x * k, y * k)
-        dot(3)
-done()
+for x in range(-20, 50):# **
+    for y in range(-20, 20):# **
+        goto(x * k, y * k)# **
+        dot(3)# **
+done()# *
 
