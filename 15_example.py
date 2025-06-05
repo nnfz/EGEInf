@@ -12,7 +12,7 @@ for a1 in d:# *
     for a2 in d:# *
         if a2 >= a1 and all(f(x) == 1 for x in d):# f(x) == 1 or f(x) == 0 see task
             r += [a2 - a1]# push otrezok *
-print(round(min(r)))# see task
+print(round(min(r)))# смотри в задание
 
 # 2 Example № 20961
 
@@ -27,10 +27,10 @@ d = [y for x in [15, 38, 142, 167] for y in [x, x + 0.1, x - 0.1]]# range
 for a1 in d:# *
     for a2 in d:# *
         if a2 >= a1 and all(f(x) == 0 for x in d):# f(x) == 1 or f(x) == 0 see task
-            r += [a2 - a1]# push otrezok *
-print(round(min(r)))# see task
+            r += [a2 - a1]# * суем наш отрезок
+print(round(min(r)))# смотри в задание
 
-# 3 Example [conjunction] № 21901
+# 3 Example [коньюкция] № 21901
 
 def f(x):
     return ((x&52 != 0) and (x&48 == 0)) <= (not(x&A == 0))

@@ -2,18 +2,19 @@
 
 from turtle import *# *
 
-k = 20# **
-tracer(0)# *
-screensize(1000, 1000)# ** window size
+k = 20# ** коэфицент размера или как там оно хз
+tracer(0)# * быстрое рисование
+screensize(1000, 1000)# ** размер окна
 
-rt(90)# turn right 90
+rt(90)# повернуть направо на 90
 
-for x in range(7):# repeat 7 times
-    rt(45)# turn right 45
-    fd(11*k)# go forward 11 * 20
-    rt(45)# turn right 45
+for x in range(7):# повторить 7 раз
+    rt(45)# повернуть направо на 45
+    fd(11*k)# впреред на 11 * 20
+    rt(45)# повернуть направо на 45
 
-pu()# * tall up
+pu()# * хвост вверъ
+# тут рисуем точки
 for x in range(-20, 20):# **
     for y in range(-20, 20):# **
         goto(x * k, y * k)# *
@@ -24,58 +25,58 @@ done()# *
 
 from turtle import *# *
 
-k = 30# **
-tracer(0)# *
-screensize(1000, 1000)# ** window size
+k = 30# ** коэфицент скалирования
+tracer(0)# * быстрое рисование
+screensize(1000, 1000)# ** размер окна
 
-rt(30)# turn right 30
+rt(30)# повернуть направо на 30
 
 for x in range(3):# repeat 3 times
-    rt(150)# turn right 150
-    fd(6 * k)# go forward 6
-    rt(30)  # turn right 30
-    fd(12 * k)# go forward 12
+    rt(150)# повернуть направо на 150
+    fd(6 * k)# вперед на 6 * 30
+    rt(30)# повернуть направо на 30
+    fd(12 * k)# вперед на 12 * 30
 
-pu()# * tall up
-
+pu()# * хвост вверх
+# рисуем точки
 for x in range(-20, 20):# *
     for y in range(-20, 20):# *
         goto(x * k, y * k)# *
         dot(3)# *
 
-done()
+done()# *
 
 # Example 3 № 21701
 
 from turtle import *# *
 
-tracer(0)# *
-screensize(2000, 1000)# ** window size
-k = 20# **
+tracer(0)# * быстрое рисование
+screensize(2000, 1000)# ** размер окна
+k = 20# ** коэфицент скалирования
 
-for x in range(2):# repeat 2 times
-    fd(28 * k)# go forward 28
-    rt(90)# turn right 90
-    fd(18 * k)# go forward 18
-    rt(90)# turn right 90
+for x in range(2):# повторить 2 раза
+    fd(28 * k)# вперед на 28 * 20
+    rt(90)# повернуть направо на 90
+    fd(18 * k)# вперед на 10 * 20
+    rt(90)# повернуть направо на 90
 
-pu()# tall up
+pu()# хвост вверх
 
-fd(14 * k)# go forward 14
-rt(90)# turn right 90
-fd(10 * k)# go forward 10
-lt(90)# turn left 90
+fd(14 * k)# вперед на 14 * 20
+rt(90)# повернуть направо на 90
+fd(10 * k)# вперед на 10 * 20
+lt(90)# повернуть налево на 90
 
-pd()# tall down
+pd()# хвост вниз
 
-for x in range(2):
-    fd(30 * k)# go forward 30
-    rt(90)#turn right 90
-    fd(7 * k)# go forward 10
-    rt(90)#turn right 90
+for x in range(2):# повторить 2 раза
+    fd(30 * k)# вперед на 30 * 20
+    rt(90)# повернуть направо на 90
+    fd(7 * k)# вперед на 7 * 20
+    rt(90)# повернуть направо на 90
 
-pu()# tall up
-
+pu()# хвост вверх
+# рисуем точки
 for x in range(-20, 50):# **
     for y in range(-20, 20):# **
         goto(x * k, y * k)# **

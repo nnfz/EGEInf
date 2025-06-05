@@ -1,50 +1,48 @@
 # 1 Example № 21891
 
-s = []# spisok
-for n in range(1, 10000):# int n
-    b = bin(n)[2:]# * | IMPORTANT [2:] - 0b****
-    b += str(sum(map(int, b)) % 2)# '0101101' + sum '0101101' / 2 ostatok
-    b += str(sum(map(int, b)) % 2)# '0101101' + sum '0101101' / 2 ostatok
-    i = int(b, 2)# 2 to 10
-    if i > 253:# if
-        s.append(n)# push to spisok
-print(min(s))# min is not important
-print(s)# min is not important
+s = []# список
+for n in range(1, 10000):# перебор чисел
+    b = bin(n)[2:]# * | НЕ ЗАБУДЬ НАПИСАТЬ [2:] - 0b****
+    b += str(sum(map(int, b)) % 2)# '0101101' + сумма '0101101' / 2 остаток
+    b += str(sum(map(int, b)) % 2)# '0101101' + сумма '0101101' / 2 = остаток
+    i = int(b, 2)# 2 система в 10
+    if i > 253:# условие
+        s.append(n)# пихаем в список
+print(min(s))# min не обязателен
 
-# 2 Example № 21700 with number system
+# 2 Example № 21700 с произвольной системой счисления
 
-def co(i, m):# convert to any number system
-    st = ''
-    while i > 0:
-        st += str(i % m)
-        i //= m
-    return st[::-1]# '123' to '321'
+def co(i, m):# * функция для конверта в произвольную систему счисления
+    st = ''# *
+    while i > 0:# *
+        st += str(i % m)# *
+        i //= m# *
+    return st[::-1]# * '123' to '321'
 
-s = []# spisok
-for n in range(3, 200):# int n
-    b = co(n, 3)# convert to 3 system
+s = []# список
+for n in range(3, 200):# перебираем, лучше посмотри в задание
+    b = co(n, 3)# переводим в 3 систему
     if n % 3 == 0:
-        b += b[-2] + b[-1]# + last 2 numbers
+        b += b[-2] + b[-1]# + 2 последние цифры
     else:
         b += co(((n%3)*3), 3)
     i = int(b, 3)# 3 to 10
-    if i <= 150:# if
-        s.append(n)# push to spisok
-print(max(s))# max is not important
-print(s)# max is not important
+    if i <= 150:# условие
+        s.append(n)# пихаем в список
+print(max(s))# max не обязателен
 
 # 3 Example № 21404
-s = []
+
+s = []# список
 for n in range(1000):
-    b = bin(n)[2:]# * | IMPORTANT [2:] - 0b****
+    b = bin(n)[2:]# * | НЕ ЗАБУДЬ [2:] - 0b****
     if sum(map(int, b)) % 2 == 0:
         b += '0'
         b = '10' + b[2:]
     else:
         b += '1'
         b = '11' + b[2:]
-    i = int(b, 2)
-    if i > 480:
+    i = int(b, 2)# 2 система в 10
+    if i > 480:# уоловие
         s.append(n)
-print(min(s))# min is not important
-print(s)# min is not important
+print(min(s))# min не обязателен

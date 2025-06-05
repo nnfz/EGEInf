@@ -3,31 +3,31 @@
 # 1 Example № 21895
 
 c = 0# counter *
-for line in open('task_files/9_Example-1.txt'):# import file *('**')
-    a = [int(x) for x in line.split()]# split int to lines *
-    ass = sorted(a)# sort ints (12, 43, 145)
-    if len(set(ass)) == 5:# len line
-        if ass[3] + ass[4] <= ass[0] + ass[1] + ass[2]:# sum 2 max <= sum 3 min
-            c += 1# counter *
+for line in open('task_files/9_Example-1.txt'):# * импортируем файл ('**')
+    a = [int(x) for x in line.split()]# * берем числа с каждой новой строки
+    ass = sorted(a)# сортируем по возрастанию (12, 43, 145)
+    if len(set(ass)) == 5:# длина строки
+        if ass[3] + ass[4] <= ass[0] + ass[1] + ass[2]:# сумма 2 наибольших <= сумме 3 наименьших
+            c += 1# * счетчик
 print(c)
 
 # 2 Example № 21408
 
-c = 0# counter *
-for line in open('task_files/9_Example-2.txt'):# import file *('**')
-    a = [int(x) for x in line.split()]# split int to lines *
-    a3 = [x for x in a if a.count(x) == 3]# count int if repeat 3 times
-    a1 = [x for x in a if a.count(x) == 1]# repeat 1 times or no repeat
-    if len(a3) == 6 and len(a1) == 1 and max(a3) > a1[0]:# if
-        c += 1# counter *
+c = 0# * счетчик
+for line in open('task_files/9_Example-2.txt'):# * импортируем файл ('**')
+    a = [int(x) for x in line.split()]# * берем числа с каждой новой строки
+    a3 = [x for x in a if a.count(x) == 3]# проверка чисел на повторение 3 раза
+    a1 = [x for x in a if a.count(x) == 1]# проверка чисел на не повторение
+    if len(a3) == 6 and len(a1) == 1 and max(a3) > a1[0]:# условие
+        c += 1# * счетчик
 print(c)
 
 # 3 Example № 21704
 
-for line in open('task_files/9_Example-3.txt'):# import file *('**')
-    a = [int(x) for x in line.split()] # split int to lines *
-    ass = sorted(a)# sort ints (12, 43, 145)
-    if  a[0] > a[1] > a[2] > a[3] > a[4] > a[5] > a[6]:# sort ints (145, 124, 12)
-        if (ass[0] + ass[6])/2 > (ass[1] + ass[2] + ass[3] + ass[4] + ass[5]) / 5:# mean(min+max) > mean(other)
+for line in open('task_files/9_Example-3.txt'):# * импортируем файл ('**')
+    a = [int(x) for x in line.split()]# * берем числа с каждой новой строки
+    ass = sorted(a)# сортируем по возрастанию (12, 43, 145)
+    if  a[0] > a[1] > a[2] > a[3] > a[4] > a[5] > a[6]:# сортируем по убыванию (145, 124, 12)
+        if (ass[0] + ass[6])/2 > (ass[1] + ass[2] + ass[3] + ass[4] + ass[5]) / 5:# среднее арифметичекое первого и последнего > среднего арифметического остальных
             print(a, sum(a))
-            break# stop on first step
+            break# останавливаем на первом шагу

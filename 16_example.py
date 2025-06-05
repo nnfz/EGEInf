@@ -10,13 +10,13 @@ print((f[47872] - 290 * f[47865])/f[47858])# Uslovie
 
 # 2 Sposob № 21711
 
-from functools import lru_cache# Import
+from functools import lru_cache# * Import
 @lru_cache(None)# Temp
 
 def ff(nn):# Init func
     if nn < 20: return nn# Uslovie
     if nn >= 20: return (nn - 6) * ff(nn - 7)# Uslovie
 
-for p in range(1, 48000):# For lru
+for p in range(1, 48000):# * For lru
     ff(p)
 print((ff(47872) - 290 * ff(47865)) / ff(47858))# Print
