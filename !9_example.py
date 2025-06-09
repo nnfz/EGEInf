@@ -31,3 +31,27 @@ for line in open('task_files/9_Example-3.txt'):# * импортируем фай
         if (ass[0] + ass[6])/2 > (ass[1] + ass[2] + ass[3] + ass[4] + ass[5]) / 5:# среднее арифметичекое первого и последнего > среднего арифметического остальных
             print(a, sum(a))
             break# останавливаем на первом шагу
+
+# 4 Example № 20899
+
+c = 0
+for line in open('task_files/9_Example-4.txt'):
+    a = [int(x) for x in line.split()]
+    a2 = [x for x in a if a.count(x) == 2]
+    ass = sorted(a)
+    if len(a2) == 2:
+        if ass[3] < ass[0] + ass[1] + ass[2]:
+            c += 1
+print(c)
+
+# 5 Example № 20955
+
+c = 0
+for line in open('task_files/9_Example-5.txt'):
+    a = [int(x) for x in line.split()]
+    a2 = [x for x in a if a.count(x) == 2]
+    a1 = [x for x in a if a.count(x) == 1]
+    if len(a2) == 4 and len(a1) == 4:
+        if (a2[0] + a2[1] + a2[2] + a2[3]) >= (a1[0] + a1[1] + a1[2] + a1[3]) * 2:
+            c += 1
+print(c)

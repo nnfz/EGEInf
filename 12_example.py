@@ -39,3 +39,27 @@ for n in range(4, 10000):
     if sm == 110:
         print(n)
         break
+
+# 4 Example № 20901
+
+s = '1' + 90 * '0'
+
+while '1' in s:
+    if '10' in s:
+        s = s.replace('10', '0001')
+    else:
+        s = s.replace('1', '000')
+
+print(s.count('0'))
+
+# 5 Example № 20806
+
+s = '1' * 81
+
+while '111' in s or '88888' in s:
+    if '111' in s:
+        s = s.replace('111', '88')
+    else:
+        s = s.replace('88888', '8')
+
+print(s)

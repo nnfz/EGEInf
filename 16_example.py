@@ -20,3 +20,12 @@ def ff(nn):# Init func
 for p in range(1, 48000):# * For lru
     ff(p)
 print((ff(47872) - 290 * ff(47865)) / ff(47858))# Print
+
+# 3 Example № 21902
+
+
+def f(n):
+    if n >= 2025: return n
+    if n < 2025: return n * 2 + f(n + 2)
+
+print(f(82)-f(81))

@@ -34,3 +34,31 @@ for x in range(1, 3001):
         print(x)
         break
 print(max(m))
+
+# 4 Example № 20904
+
+m = []
+for x in range(1, 2031):
+    a = 7**170 + 7**100 - x
+    c = 0
+    while a > 0:
+        if a % 7 == 0:
+            c += 1
+        a //= 7
+    m.append(c)
+    if c == 73:
+        print(x)
+
+# 5 Example № 20904
+
+m = []
+for x in range(1, 2031):
+    a = 3**100 - x
+    c = 0
+    while a > 0:
+        if a % 3 == 0:
+            c += 1
+        a //= 3
+    m.append(c)
+    if c == 1:
+        print(x)
